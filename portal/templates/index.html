@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Portal</title>
+</head>
+<body>
+    <h1>Clientes</h1>
+    <ul>
+        {% for cliente in clientes %}
+        <li>{{ cliente.nome }} - {{ cliente.email }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Tickets</h1>
+    <ul>
+        {% for ticket in tickets %}
+        <li>{{ ticket.titulo }} - {{ ticket.status }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
